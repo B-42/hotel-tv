@@ -105,7 +105,7 @@ void loop() {
   }
 
   //Scene 2
-  //Opem Door once Johnny is spun
+  //Open Door once Johnny is spun
   if (tapeDoor == HIGH){
     for(int i=DOOR_MIN; i<DOOR_MAX; i++){
       SERVO_DOOR.write(i);
@@ -139,7 +139,7 @@ void loop() {
   }
 
 
-  /*
+  /* servo testing, runs every 10 seconds (10000 ms)
   if(millis() % 10000 == 0) {
     for(int i=0; i<180; i++) {
       SERVO_JOHNNY.write(i);
